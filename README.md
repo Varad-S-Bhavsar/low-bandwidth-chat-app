@@ -12,7 +12,7 @@ As a software developer passionate about real-world problem solving, I wanted to
 - Implement real-time WebSocket communication
 - Design responsive and clean UI without relying on heavy libraries
 
-> ✅ This project proves my understanding of full-stack development, performance optimization, real-time systems, and user-focused design — all crucial for SDE roles.
+> This project proves my understanding of full-stack development, performance optimization, real-time systems, and user-focused design — all crucial for SDE roles.
 
 ---
 
@@ -40,41 +40,16 @@ As a software developer passionate about real-world problem solving, I wanted to
 
 ---
 
-
-
-
-## ▶️ Getting Started Locally
-
-
- Clone the repo
-git clone https://github.com/Varad-S-Bhavsar/low-bandwidth-chat-app.git
-cd low-bandwidth-chat-app
-
-# Start Backend
-cd server
-npm install
-node index.js
-
-# Start Frontend
-cd ../client
-npm install
-npm run dev
-
-
-
-
 ---
-
-
 
 ## 💼 Why You Should Hire Me
 
-✅ I design real-world solutions, not just tutorials  
-✅ I understand both backend systems and frontend UI/UX  
-✅ I optimize for bandwidth, performance, and responsiveness  
-✅ I deploy and maintain full-stack apps independently  
-✅ I document code and projects professionally for teams
+ I design real-world solutions, not just tutorials  
+ I understand both backend systems and frontend UI/UX  
+ I optimize for bandwidth, performance, and responsiveness  
+ I deploy and maintain full-stack apps independently  
+ I document code and projects professionally for teams
 
 
 
-> ⭐ If you liked this project, feel free to fork, star or reach out to collaborate!
+>  If you liked this project, feel free to fork, star or reach out to collaborate!
