@@ -57,8 +57,8 @@ low-bandwidth-chat-app/
 
 ## ▶️ Getting Started Locally
 
-```bash
-# Clone the repo
+
+ Clone the repo
 git clone https://github.com/Varad-S-Bhavsar/low-bandwidth-chat-app.git
 cd low-bandwidth-chat-app
 
