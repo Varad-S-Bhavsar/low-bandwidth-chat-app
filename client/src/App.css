@@ -1,0 +1,206 @@
+/* Root layout */
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: black;
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Sidebar like ChatGPT */
+.sidebar {
+  width: 220px;
+  min-width: 180px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.dark .sidebar {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.toggle {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: 1px solid gray;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Main chat area */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Login screen */
+.login-box {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-box input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Chat messages container */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* 🔥 Stack messages vertically */
+  gap: 10px;
+}
+
+.dark .chat-box {
+  background-color: #222;
+}
+
+/* Individual chat message */
+.bubble {
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.bubble.you {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; /* 🔵 Your messages on right */
+  margin-left: auto;
+}
+
+.bubble.other {
+  background-color: #e0e0e0;
+  color: black;
+  align-self: flex-start; /* ⚪️ Others' messages on left */
+  margin-right: auto;
+}
+
+.dark .bubble.other {
+  background-color: #333;
+  color: white;
+}
+
+.bubble-user {
+  font-size: 12px;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Typing indicator */
+.typing {
+  font-style: italic;
+  color: gray;
+  margin: 5px 10px;
+}
+
+/* Input area */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .dark .sidebar {
+    border-bottom: 1px solid #444;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .bubble {
+    max-width: 100%;
+  }
+
+  .input-box button {
+    padding: 10px 14px;
+  }
+}
