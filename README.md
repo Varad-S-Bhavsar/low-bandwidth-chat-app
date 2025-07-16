@@ -77,9 +77,6 @@ npm run dev
 
 ---
 
-### ✂️ **PART 8: Why You Should Hire Me**
-
-```markdown
 ---
 
 ## 💼 Why You Should Hire Me
@@ -90,7 +87,13 @@ npm run dev
 ✅ I deploy and maintain full-stack apps independently  
 ✅ I document code and projects professionally for teams
 
+---
 
+## 📬 Contact
+
+👨‍💻 Varad S. Bhavsar  
+🔗 [LinkedIn](https://www.linkedin.com/in/Varad-S-Bhavsar)  
+📧 [your-email@example.com]
 
 ---
 
